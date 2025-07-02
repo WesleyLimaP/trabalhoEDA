@@ -1,3 +1,5 @@
+package hash;
+
 public class Nodo {
     private String sigla;
     private String estado;
@@ -44,7 +46,7 @@ public class Nodo {
 
     @Override
     public String toString() {
-        return "Nodo{" +
+        return "hash.Nodo{" +
                 "sigla='" + sigla + '\'' +
                 ", estado='" + estado + '\'' +
                 ", proximo=" + proximo +

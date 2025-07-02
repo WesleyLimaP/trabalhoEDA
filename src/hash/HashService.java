@@ -1,5 +1,7 @@
+package hash;
+
 public class HashService {
-    public void adcionar(String sigla, String estado, ListaEncadeada [] array){
+    public void adcionar(String sigla, String estado, ListaEncadeada[] array){
         int posicao = calculoHash(sigla, array.length);
         if(array[posicao] == null){
             array[posicao] = new ListaEncadeada(new Nodo(sigla, estado));

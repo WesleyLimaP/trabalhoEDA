@@ -1,8 +1,9 @@
+package hash;
+
 import java.util.Arrays;
-import java.util.List;
 
 public class TabelaHash {
-    private ListaEncadeada [] array;
+    private ListaEncadeada[] array;
     private HashService hashService;
 
     public TabelaHash(ListaEncadeada[] array, HashService hashService) {

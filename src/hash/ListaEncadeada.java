@@ -1,3 +1,5 @@
+package hash;
+
 public class ListaEncadeada {
     private Nodo inicio;
 
