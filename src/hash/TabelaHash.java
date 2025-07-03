@@ -1,7 +1,5 @@
 package hash;
 
-import java.util.Arrays;
-
 public class TabelaHash {
     private ListaEncadeada[] array;
     private HashService hashService;
@@ -13,8 +11,25 @@ public class TabelaHash {
 
     @Override
     public String toString() {
-        return  Arrays.toString(array);
-    }
+        StringBuilder stringBuilder = new StringBuilder();
+       for(int i = 0; i < array.length; i++) {
+           if (array[i] != null) {
+               stringBuilder.append(i).append(": ");
+               while (array[i].getInicio() != null) {
+                   stringBuilder.append(array[i]).append(" -> ");
+                   array[i].setInicio(array[i].getInicio().getProximo());
+               }
+               stringBuilder.append(" none");
+               stringBuilder.append("\n");
+           } else {
+               stringBuilder.append(i).append(": ").append(" none ").append("\n");
+           }
+       }
+
+        return stringBuilder.toString();
+           }
+
+
 
     public ListaEncadeada[] getArray() {
         return array;
@@ -31,6 +46,7 @@ public class TabelaHash {
     public void setHashService(HashService hashService) {
         this.hashService = hashService;
     }
+
 
 
 }

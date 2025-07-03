@@ -44,12 +44,4 @@ public class Nodo {
         this.proximo = proximo;
     }
 
-    @Override
-    public String toString() {
-        return "hash.Nodo{" +
-                "sigla='" + sigla + '\'' +
-                ", estado='" + estado + '\'' +
-                ", proximo=" + proximo +
-                '}';
-    }
 }

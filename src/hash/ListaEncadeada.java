@@ -31,8 +31,6 @@ public class ListaEncadeada {
 
     @Override
     public String toString() {
-        return "{" +
-                "inicio=" + inicio +
-                '}';
+        return inicio.getSigla();
     }
 }
